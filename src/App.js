@@ -1,12 +1,12 @@
 import { useState } from "react";
-import { useTheEffect } from "./useEffect";
+import { useOnceEffect } from "./useEffect";
 import "./styles.css";
 
 export default function App() {
   const [persons, setPersons] = useState([]);
   const [n, setN] = useState(5);
 
-  useTheEffect(() => {
+  useOnceEffect(() => {
     fetch(`https://randomuser.me/api?results=${n}`)
       .then((res) => res.json())
       .then(({ results }) => {

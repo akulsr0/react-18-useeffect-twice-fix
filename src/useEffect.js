@@ -11,4 +11,4 @@ const useDevEffect = (cb, deps) => {
 
 const isDev = !process.env.NODE_ENV || process.env.NODE_ENV === "development";
 
-export const useTheEffect = isDev ? useDevEffect : useEffect;
+export const useOnceEffect = isDev ? useDevEffect : useEffect;
