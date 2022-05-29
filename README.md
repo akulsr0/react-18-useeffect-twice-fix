@@ -1,6 +1,6 @@
 # react-18-useeffect-twice-fix
 
-## Use Custom hook to prevent effects running twice in React 18
+## Use Custom hook to prevent effects running twice in React 18 (Development Mode)
 
 ```js
 import { useEffect } from "react";
